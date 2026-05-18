@@ -34,10 +34,10 @@ function FeaturesPage() {
     <SiteLayout>
       <section className="bg-hero-gradient py-20 text-primary-foreground">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-sm font-semibold text-gold">الخدمات</span>
-          <h1 className="mt-2 text-4xl font-bold sm:text-5xl">حلول متكاملة لكل احتياج</h1>
+          <span className="text-sm font-semibold text-gold">الخدمات · 100% أونلاين</span>
+          <h1 className="mt-2 text-4xl font-bold sm:text-5xl">حلول رقمية متكاملة لكل احتياج</h1>
           <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-            من الاستشارة الأولى إلى المتابعة طويلة المدى — رشدِينا تقدّم تجربة سلسة وموثوقة.
+            استشارات نفسية وتربوية عن بُعد عبر فيديو، صوت ودردشة — مع دفع إلكتروني آمن بـ CIB والذهبية.
           </p>
         </div>
       </section>
