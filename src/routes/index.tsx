@@ -72,12 +72,19 @@ function HomePage() {
             </div>
           </div>
 
-          {/* Decorative mock phone */}
+          {/* Logo showcase */}
           <div className="relative mx-auto hidden max-w-sm lg:block">
-            <div className="animate-float relative rounded-[2.5rem] border-8 border-white/10 bg-primary-deep p-4 shadow-elegant">
-              <div className="rounded-[2rem] bg-gradient-to-b from-white/5 to-transparent p-6">
-                <div className="mx-auto mb-6 h-1.5 w-20 rounded-full bg-white/20" />
-                <div className="text-center">
+            <div className="animate-float relative">
+              <img
+                src={rushdinaLogo}
+                alt="شعار رشدِينا - منصة الاستشارات التربوية والنفسية"
+                className="relative z-10 mx-auto w-full max-w-[420px] rounded-[2.5rem] shadow-elegant"
+              />
+              <div className="absolute -inset-10 -z-0 rounded-[3rem] bg-gold/20 blur-3xl" />
+            </div>
+          </div>
+        </div>
+      </section>
                   <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-gold/40 bg-gold/10">
                     <span className="font-display text-3xl text-gold">ر</span>
                   </div>
