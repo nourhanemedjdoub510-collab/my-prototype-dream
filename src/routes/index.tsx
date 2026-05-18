@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Brain, GraduationCap, Users, BookOpen, CalendarCheck, MessageCircle, ShieldCheck, Sparkles, BadgeCheck, ArrowLeft } from "lucide-react";
+import rushdinaLogo from "@/assets/rushdina-logo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
