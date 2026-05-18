@@ -1,35 +1,43 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import { Brain, GraduationCap, Users, BookOpen, CalendarCheck, MessageCircle, ShieldCheck, Sparkles, BadgeCheck, ArrowLeft } from "lucide-react";
+import { Brain, GraduationCap, Users, BookOpen, CalendarCheck, MessageCircle, ShieldCheck, Sparkles, BadgeCheck, ArrowLeft, Video, Phone, CreditCard, Bell, Wifi } from "lucide-react";
 import rushdinaLogo from "@/assets/rushdina-logo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "رشدِينا — معاً نحو تربية متوازنة وتعليم أفضل" },
-      { name: "description", content: "منصة رقمية للاستشارات التربوية والنفسية لدعم الأسرة والتلميذ والأستاذ. أخصائيون معتمدون، حجز سهل، خصوصية تامة." },
-      { property: "og:title", content: "رشدِينا — معاً نحو تربية متوازنة وتعليم أفضل" },
-      { property: "og:description", content: "أخصائيون معتمدون · استشارات سرية · حجز سهل وسريع." },
+      { title: "رشدِينا — استشارات نفسية وتربوية أونلاين" },
+      { name: "description", content: "منصة رقمية للاستشارات النفسية والتربوية عن بُعد عبر مكالمات فيديو، صوتية ودردشة مع أخصائيين معتمدين. ادفع بـ CIB أو الذهبية." },
+      { property: "og:title", content: "رشدِينا — استشارات أونلاين مع أخصائيين معتمدين" },
+      { property: "og:description", content: "جلسات فيديو · مكالمات · دردشة آمنة · دفع إلكتروني بـ CIB والذهبية." },
     ],
   }),
   component: HomePage,
 });
 
 const categories = [
-  { icon: Brain, title: "الاستشارات النفسية", desc: "دعم نفسي متخصص للأطفال والمراهقين والأسرة" },
-  { icon: BookOpen, title: "الاستشارات التربوية", desc: "حلول عملية لتطوير السلوك ومهارات التعلم" },
-  { icon: GraduationCap, title: "دعم التلاميذ", desc: "تنمية شخصية ومستوى دراسي أفضل" },
-  { icon: Users, title: "دعم الأساتذة", desc: "أدوات لإدارة الصف وتحسين العملية التعليمية" },
-  { icon: CalendarCheck, title: "حجز موعد", desc: "احجز جلستك في أي وقت ومن أي مكان" },
-  { icon: BookOpen, title: "المكتبة التربوية", desc: "مقالات، فيديوهات ونصائح موثوقة" },
+  { icon: Brain, title: "الاستشارات النفسية", desc: "جلسات نفسية أونلاين للمراهقين والأسرة: قلق دراسي، سلوك، وانفعالات" },
+  { icon: BookOpen, title: "الاستشارات التربوية للأولياء", desc: "تربية إيجابية، التعامل مع الأطفال والمراهقة، عن بُعد عبر التطبيق" },
+  { icon: GraduationCap, title: "دعم التلاميذ", desc: "تحسين التركيز، تنظيم الوقت، طرق المراجعة والتخطيط الدراسي" },
+  { icon: Users, title: "دعم الأساتذة", desc: "إدارة القسم، التعامل مع التلميذ المشاغب والانطوائي، استراتيجيات حديثة" },
+  { icon: CalendarCheck, title: "حجز جلسات أونلاين", desc: "اختر المستشار والوقت ونوع الجلسة بثوانٍ" },
+  { icon: BookOpen, title: "المكتبة التربوية الرقمية", desc: "مقالات وفيديوهات موثوقة من نخبة المختصين" },
+];
+
+const sessionTypes = [
+  { icon: Video, title: "مكالمات فيديو", desc: "جلسة مرئية مباشرة وآمنة مع المستشار" },
+  { icon: Phone, title: "مكالمات صوتية", desc: "تواصل صوتي واضح من أي مكان" },
+  { icon: MessageCircle, title: "دردشة كتابية", desc: "محادثة مشفّرة قبل وأثناء وبعد الجلسة" },
+  { icon: Sparkles, title: "استشارات تفاعلية", desc: "تجربة رقمية تفاعلية وعصرية" },
 ];
 
 const benefits = [
-  { icon: BadgeCheck, title: "أخصائيون معتمدون", desc: "ذوو خبرة وكفاءات عالية" },
-  { icon: ShieldCheck, title: "خصوصية وأمان", desc: "استشارات سرية تماماً" },
-  { icon: CalendarCheck, title: "حجز سهل وسريع", desc: "في أي وقت ومن أي مكان" },
-  { icon: Users, title: "دعم شامل لكل الفئات", desc: "أولياء، تلاميذ، أساتذة" },
-  { icon: Sparkles, title: "محتوى تربوي موثوق", desc: "مقالات، فيديوهات، نصائح" },
+  { icon: Wifi, title: "100% عن بُعد", desc: "كل الخدمات داخل التطبيق" },
+  { icon: BadgeCheck, title: "أخصائيون معتمدون", desc: "خبرة وكفاءات عالية" },
+  { icon: ShieldCheck, title: "خصوصية وأمان", desc: "جلسات مشفّرة وسرية تامة" },
+  { icon: CreditCard, title: "دفع إلكتروني", desc: "بطاقة CIB والذهبية" },
+  { icon: Bell, title: "إشعارات بالمواعيد", desc: "تذكير ذكي قبل كل جلسة" },
+  { icon: Users, title: "دعم لكل الفئات", desc: "أولياء، تلاميذ، أساتذة" },
 ];
 
 function HomePage() {
