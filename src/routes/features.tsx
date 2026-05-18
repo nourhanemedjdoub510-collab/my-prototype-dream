@@ -1,28 +1,32 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import { Brain, BookOpen, GraduationCap, Users, CalendarCheck, MessageCircle, Library, CreditCard } from "lucide-react";
+import { Brain, BookOpen, GraduationCap, Users, CalendarCheck, MessageCircle, Library, CreditCard, Video, Phone, Bell, ShieldCheck } from "lucide-react";
 
 export const Route = createFileRoute("/features")({
   head: () => ({
     meta: [
-      { title: "الخدمات — رشدِينا" },
-      { name: "description", content: "استكشف خدمات رشدِينا: استشارات نفسية وتربوية، دعم التلاميذ والأساتذة، حجز مواعيد، ومكتبة تربوية شاملة." },
-      { property: "og:title", content: "خدمات رشدِينا" },
-      { property: "og:description", content: "كل ما تحتاجه من استشارات ودعم تربوي ونفسي في مكان واحد." },
+      { title: "الخدمات — رشدِينا | استشارات أونلاين" },
+      { name: "description", content: "استشارات نفسية وتربوية عن بُعد: فيديو، صوت، دردشة، حجز ذكي، دفع بـ CIB والذهبية، إشعارات ومكتبة تربوية رقمية." },
+      { property: "og:title", content: "خدمات رشدِينا — كلها أونلاين" },
+      { property: "og:description", content: "جلسات فيديو ومكالمات ودردشة آمنة مع أخصائيين معتمدين، داخل التطبيق." },
     ],
   }),
   component: FeaturesPage,
 });
 
 const features = [
-  { icon: Brain, title: "الاستشارات النفسية", desc: "أخصائيون نفسيون لمتابعة الأطفال والمراهقين والأسرة، مع خطط دعم مخصصة." },
-  { icon: BookOpen, title: "الاستشارات التربوية", desc: "تشخيص صعوبات التعلم، بناء عادات دراسة فعّالة، وتطوير المهارات." },
-  { icon: GraduationCap, title: "دعم التلاميذ", desc: "جلسات تنمية شخصية، توجيه دراسي، ومرافقة للنجاح المدرسي." },
-  { icon: Users, title: "دعم الأساتذة", desc: "أدوات لإدارة الصف، مهارات تواصل، وحلول للحالات الصعبة." },
-  { icon: CalendarCheck, title: "حجز موعد ذكي", desc: "اختر المستشار، التاريخ والوقت ونوع الجلسة (حضوري أو عن بعد) في خطوات." },
-  { icon: MessageCircle, title: "محادثة آمنة", desc: "تواصل مباشر ومشفّر مع المستشار قبل وبعد الجلسة." },
-  { icon: Library, title: "المكتبة التربوية", desc: "مقالات، فيديوهات ومحتوى موثوق من نخبة المختصين." },
-  { icon: CreditCard, title: "دفع آمن", desc: "عملية دفع مشفّرة بأشهر البطاقات البنكية." },
+  { icon: Brain, title: "الدعم النفسي أونلاين", desc: "جلسات نفسية عن بُعد للمراهقين والأسرة: قلق دراسي، مشكلات سلوكية وانفعالية." },
+  { icon: BookOpen, title: "الاستشارات التربوية للأولياء", desc: "تربية إيجابية، التعامل مع الأطفال، المراهقة المبكرة والمتأخرة — كلها داخل التطبيق." },
+  { icon: GraduationCap, title: "دعم التلاميذ", desc: "تحسين التركيز، تنظيم الوقت، طرق المراجعة، التخطيط الدراسي والتحفيز." },
+  { icon: Users, title: "دعم الأساتذة", desc: "إدارة القسم، التعامل مع التلميذ المشاغب والانطوائي، استراتيجيات التعليم الحديثة." },
+  { icon: Video, title: "مكالمات فيديو مباشرة", desc: "جلسات مرئية واضحة وآمنة مع المستشار من أي مكان." },
+  { icon: Phone, title: "مكالمات صوتية", desc: "تواصل صوتي مريح إذا كنت تفضّل الخصوصية." },
+  { icon: MessageCircle, title: "دردشة مع المستشار", desc: "محادثة كتابية مشفّرة قبل، أثناء، وبعد الجلسة." },
+  { icon: CalendarCheck, title: "حجز جلسات أونلاين", desc: "اختر المستشار، التاريخ، الوقت، ونوع الجلسة في خطوات بسيطة." },
+  { icon: Bell, title: "إشعارات بالمواعيد", desc: "تذكير ذكي قبل كل جلسة حتى لا تفوّت موعدك." },
+  { icon: CreditCard, title: "دفع إلكتروني آمن", desc: "ادفع ببطاقة CIB أو الذهبية بكل أمان داخل التطبيق." },
+  { icon: Library, title: "مكتبة تربوية رقمية", desc: "مقالات، فيديوهات ومحتوى موثوق من نخبة المختصين." },
+  { icon: ShieldCheck, title: "خصوصية وسرية تامة", desc: "كل الجلسات مشفّرة وبياناتك محمية بالكامل." },
 ];
 
 function FeaturesPage() {
@@ -30,10 +34,10 @@ function FeaturesPage() {
     <SiteLayout>
       <section className="bg-hero-gradient py-20 text-primary-foreground">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-sm font-semibold text-gold">الخدمات</span>
-          <h1 className="mt-2 text-4xl font-bold sm:text-5xl">حلول متكاملة لكل احتياج</h1>
+          <span className="text-sm font-semibold text-gold">الخدمات · 100% أونلاين</span>
+          <h1 className="mt-2 text-4xl font-bold sm:text-5xl">حلول رقمية متكاملة لكل احتياج</h1>
           <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-            من الاستشارة الأولى إلى المتابعة طويلة المدى — رشدِينا تقدّم تجربة سلسة وموثوقة.
+            استشارات نفسية وتربوية عن بُعد عبر فيديو، صوت ودردشة — مع دفع إلكتروني آمن بـ CIB والذهبية.
           </p>
         </div>
       </section>

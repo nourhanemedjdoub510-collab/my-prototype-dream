@@ -46,10 +46,10 @@ function ConsultantsPage() {
     <SiteLayout>
       <section className="bg-hero-gradient py-16 text-primary-foreground">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <span className="text-sm font-semibold text-gold">المستشارون</span>
+          <span className="text-sm font-semibold text-gold">المستشارون · جلسات أونلاين</span>
           <h1 className="mt-2 text-4xl font-bold sm:text-5xl">المستشارون المعتمدون</h1>
           <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-            اختر مستشارك من نخبة الأخصائيين المعتمدين واحجز جلستك في خطوات بسيطة.
+            اختر مستشارك من نخبة الأخصائيين واحجز جلستك أونلاين عبر فيديو، صوت أو دردشة في خطوات بسيطة.
           </p>
 
           <div className="mx-auto mt-8 flex max-w-2xl items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-3 backdrop-blur">
@@ -101,7 +101,7 @@ function ConsultantsPage() {
                 </div>
                 <button className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-primary-foreground shadow-card transition-all hover:shadow-elegant">
                   <CalendarCheck className="h-4 w-4" />
-                  احجز الآن
+                  احجز جلسة أونلاين
                 </button>
               </div>
             ))}
