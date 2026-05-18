@@ -85,27 +85,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-gold/40 bg-gold/10">
-                    <span className="font-display text-3xl text-gold">ر</span>
-                  </div>
-                  <h3 className="mt-4 font-display text-xl text-gold">رشدِينا</h3>
-                  <p className="mt-1 text-xs text-white/60">اختر الفئة المناسبة لك</p>
-                </div>
-                <div className="mt-6 space-y-2.5">
-                  {["ولي أمر", "تلميذ", "أستاذ"].map((r) => (
-                    <div key={r} className="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 text-sm text-white/90">
-                      <span>{r}</span>
-                      <span className="h-8 w-8 rounded-lg bg-gold/20" />
-                    </div>
-                  ))}
-                </div>
-                <button className="mt-6 w-full rounded-full bg-gold-gradient py-3 text-sm font-bold text-primary-deep">تسجيل الدخول</button>
-              </div>
-            </div>
-            <div className="absolute -inset-8 -z-10 rounded-[3rem] bg-gold/10 blur-3xl" />
-          </div>
-        </div>
-      </section>
 
       {/* Categories */}
       <section className="bg-cream-gradient py-20">
