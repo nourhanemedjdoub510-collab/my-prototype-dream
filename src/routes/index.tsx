@@ -42,6 +42,18 @@ function HomePage() {
         <div className="absolute -bottom-32 -right-20 h-96 w-96 rounded-full bg-gold/15 blur-3xl" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 md:py-28 lg:grid-cols-2 lg:px-8">
+          {/* Logo showcase - on the right in RTL */}
+          <div className="relative order-first mx-auto w-full max-w-xs sm:max-w-sm">
+            <div className="animate-float relative">
+              <img
+                src={rushdinaLogo}
+                alt="شعار رشدِينا - منصة الاستشارات التربوية والنفسية"
+                className="relative z-10 mx-auto w-full rounded-[2.5rem] shadow-elegant"
+              />
+              <div className="absolute -inset-10 -z-0 rounded-[3rem] bg-gold/20 blur-3xl" />
+            </div>
+          </div>
+
           <div className="text-center lg:text-right">
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs font-medium text-gold">
               <Sparkles className="h-3.5 w-3.5" /> منصة عربية رائدة
@@ -69,18 +81,6 @@ function HomePage() {
               <div className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-gold" /> +50 أخصائي معتمد</div>
               <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-gold" /> سرية تامة</div>
               <div className="flex items-center gap-2"><Sparkles className="h-4 w-4 text-gold" /> دعم 24/7</div>
-            </div>
-          </div>
-
-          {/* Logo showcase */}
-          <div className="relative mx-auto hidden max-w-sm lg:block">
-            <div className="animate-float relative">
-              <img
-                src={rushdinaLogo}
-                alt="شعار رشدِينا - منصة الاستشارات التربوية والنفسية"
-                className="relative z-10 mx-auto w-full max-w-[420px] rounded-[2.5rem] shadow-elegant"
-              />
-              <div className="absolute -inset-10 -z-0 rounded-[3rem] bg-gold/20 blur-3xl" />
             </div>
           </div>
         </div>
