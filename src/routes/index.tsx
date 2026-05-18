@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { Brain, GraduationCap, Users, BookOpen, CalendarCheck, MessageCircle, ShieldCheck, Sparkles, BadgeCheck, ArrowLeft } from "lucide-react";
+import rushdinaLogo from "@/assets/rushdina-logo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -71,30 +72,16 @@ function HomePage() {
             </div>
           </div>
 
-          {/* Decorative mock phone */}
+          {/* Logo showcase */}
           <div className="relative mx-auto hidden max-w-sm lg:block">
-            <div className="animate-float relative rounded-[2.5rem] border-8 border-white/10 bg-primary-deep p-4 shadow-elegant">
-              <div className="rounded-[2rem] bg-gradient-to-b from-white/5 to-transparent p-6">
-                <div className="mx-auto mb-6 h-1.5 w-20 rounded-full bg-white/20" />
-                <div className="text-center">
-                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-gold/40 bg-gold/10">
-                    <span className="font-display text-3xl text-gold">ر</span>
-                  </div>
-                  <h3 className="mt-4 font-display text-xl text-gold">رشدِينا</h3>
-                  <p className="mt-1 text-xs text-white/60">اختر الفئة المناسبة لك</p>
-                </div>
-                <div className="mt-6 space-y-2.5">
-                  {["ولي أمر", "تلميذ", "أستاذ"].map((r) => (
-                    <div key={r} className="flex items-center justify-between rounded-2xl bg-white/5 px-4 py-3 text-sm text-white/90">
-                      <span>{r}</span>
-                      <span className="h-8 w-8 rounded-lg bg-gold/20" />
-                    </div>
-                  ))}
-                </div>
-                <button className="mt-6 w-full rounded-full bg-gold-gradient py-3 text-sm font-bold text-primary-deep">تسجيل الدخول</button>
-              </div>
+            <div className="animate-float relative">
+              <img
+                src={rushdinaLogo}
+                alt="شعار رشدِينا - منصة الاستشارات التربوية والنفسية"
+                className="relative z-10 mx-auto w-full max-w-[420px] rounded-[2.5rem] shadow-elegant"
+              />
+              <div className="absolute -inset-10 -z-0 rounded-[3rem] bg-gold/20 blur-3xl" />
             </div>
-            <div className="absolute -inset-8 -z-10 rounded-[3rem] bg-gold/10 blur-3xl" />
           </div>
         </div>
       </section>
