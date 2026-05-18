@@ -168,7 +168,7 @@ function HomePage() {
                 <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-gold/20 blur-2xl" />
                 <MessageCircle className="h-10 w-10 text-gold" />
                 <blockquote className="mt-5 font-display text-2xl leading-relaxed">
-                  «رشدِينا غيّرت طريقة تواصلنا مع مستشار ابنتي. الحجز سهل، والمستشارة رائعة جداً.»
+                  «حجزتُ جلسة فيديو مع المستشارة من المنزل — تجربة سهلة، آمنة وفعّالة. الدفع تمّ بـ CIB في ثوانٍ.»
                 </blockquote>
                 <div className="mt-6 flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-gold/30" />
