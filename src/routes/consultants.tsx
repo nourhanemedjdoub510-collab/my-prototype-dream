@@ -101,7 +101,7 @@ function ConsultantsPage() {
                 </div>
                 <button className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-primary-foreground shadow-card transition-all hover:shadow-elegant">
                   <CalendarCheck className="h-4 w-4" />
-                  احجز الآن
+                  احجز جلسة أونلاين
                 </button>
               </div>
             ))}
